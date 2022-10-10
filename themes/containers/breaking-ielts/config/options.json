@@ -1,0 +1,41 @@
+{
+    "title": "Wisestyle options",
+    "groups": {
+        "general": {
+            "label": "Chung",
+            "file": "general.json"
+        },
+        "header": {
+            "label": "Header",
+            "file": "header.json"
+        },
+        "footer": {
+            "label": "Footer",
+            "file": "footer.json"
+        },
+        "sidebar": {
+            "label": "Sidebar",
+            "file": "sidebar.json"
+        },
+        "home": {
+            "label": "Home",
+            "file": "home.json"
+        },
+        "posts": {
+            "label": "Tin Bài",
+            "file": "posts.json"
+        },
+        "pages": {
+            "label": "Trang tĩnh",
+            "file": "pages.json"
+        },
+        "contacts": {
+            "label": "Liên hệ",
+            "file": "contacts.json"
+        },
+        "socials": {
+            "label": "MXH ",
+            "file": "socials.json"
+        }
+    }
+}

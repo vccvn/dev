@@ -1,0 +1,10 @@
+{
+    "name": "Home: Các con số thống kê (Area)",
+    "inputs": {
+        "title": {
+            "type": "text",
+            "label": "Tiêu đề (tùy chọn)",
+            "placeholder": "Viết gì đó..."
+        }
+    }
+}

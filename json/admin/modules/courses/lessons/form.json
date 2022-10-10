@@ -1,0 +1,98 @@
+{
+    "inputs": {
+        "name": {
+            "type": "text",
+            "label": "Tên bài giảng / tiết học",
+            "placeholder": "Nhập tên khóa học",
+            "required": "true"
+        },
+        "slug": {
+            "type": "text",
+            "label": "Đường dẫn (slug)",
+            "placeholder": "Nhập đường dẫn",
+            "template": "crazyslug",
+            "@check-field": "custom_slug",
+            "@extension": ".html",
+            "@check-slug-route": "admin.courses.lessons.check-slug",
+            "@get-slug-route": "admin.courses.lessons.get-slug",
+            "@source-id": "name",
+            "@ajax-param-selectors": "#input-hidden-id",
+            "@ajax-check-name": "slug",
+            "@ajax-get-name": "slug"
+        },
+        "custom_slug": {
+            "type": "checkbox",
+            "label": "Tùy chọn slug",
+            "check_label": "Tùy chỉnh"
+        },
+        "course_id": {
+            "type": "crazyselect",
+            "label": "Khóa học",
+            "template": "crazyselect",
+            "call": "get_course_options"
+        },
+        "description": {
+            "type": "textarea",
+            "label": "Mô tả ngắn",
+            "placeholder": "Nhập mô tả",
+            "style": {
+                "min-height": "100px"
+            }
+        },
+        "content": {
+            "type": "textarea",
+            "label": "Nội dung",
+            "placeholder": "Nhập Nội dung",
+            "className": "tiny-mce",
+            "template": "tinymce",
+            "height": 375
+        },
+        "thumbnail_id": {
+            "type": "media",
+            "label": "Ảnh Thumbnail"
+        },
+        "video_url": {
+            "type": "text",
+            "label": "Đường dẫn video giới thiệu"
+        },
+        "type": {
+            "type": "radio",
+            "label": "Loại khóa học",
+            "call": "get_privacy_lesson_type_labels",
+            "default": "protected"
+        }
+    },
+    "config": {
+        "name": "Thông tin Khóa học",
+        "layout_type": "column",
+        "form_groups": [
+            {
+                "title": "Thông tin cơ bản",
+                "class": "col-md-7",
+                "inputs": [
+                    "name",
+                    "slug",
+                    "course_id",
+                    "description"
+                    
+                ]
+            },
+            {
+                "title": "Ảnh và thuộc tính",
+                "class": "col-md-5",
+                "inputs": [
+                    "thumbnail_id",
+                    "video_url",
+                    "type"
+                ]
+            },
+            {
+                "title": "Mở rộng",
+                "class": "col-md-12",
+                "inputs": [
+                    "content"
+                ]
+            }
+        ]
+    }
+}

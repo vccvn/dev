@@ -1,0 +1,87 @@
+{
+    "name": "Settings: Post: Thiết lập mục đăng bài",
+    "inputs": {
+        "title": {
+            "type": "text",
+            "label": "Tiêu đề Thiết lập (Tùy chọn)"
+        },
+        "dynamic_id": {
+            "type": "crazyselect",
+            "label": "Mục đăng bài",
+            "call": "get_dynamic_options",
+            "params": [
+                [],
+                "Chọn một"
+            ],
+            "@change": "Crazy.posts.changeDynamicID",
+            "required": true
+        },
+        "category_id": {
+            "type": "crazyselect",
+            "label": "Danh mục",
+            "call": "get_post_category_options",
+            "params": [
+                {
+                    "dynamic_id": "#dynamic_id"
+                },
+                true
+            ]
+        },
+        "show_breadcrumb": {
+            "type": "switch",
+            "label": "Breadcrumb",
+            "value_type": "boolean",
+            "check_label": "Hiển thị breadcrumb"
+        },
+        "list_style": {
+            "type": "radio",
+            "label": "Style Danh sách",
+            "data": {
+                "style-1": "Style 1",
+                "style-2": "Style 2",
+                "course-one": "Khóa Học - 1",
+                "course-two": "Khóa Học - 2",
+                "course-five": "Khóa Học - 5"
+            },
+            "default": "style-1"
+        },
+        "list_layout": {
+            "type": "radio",
+            "label": "Layout Danh sách",
+            "data": {
+                "sidebar": "sidebar",
+                "fullwidth": "fullwidth"
+            },
+            "default": "sidebar"
+        },
+        "list_type": {
+            "type": "radio",
+            "label": "Kiểu Danh sách",
+            "data": {
+                "standard": "Standard",
+                "list": "Danh sách",
+                "grid": "Lưới (grid)"
+            },
+            "default": "grid"
+        },
+        "detail_style": {
+            "type": "radio",
+            "label": "Style chi tiết",
+            "data": {
+                "1": "Style 1",
+                "2": "Style 2"
+            },
+            "default": "1"
+        },
+        "detail_layout": {
+            "type": "radio",
+            "label": "Layout Chi tiết",
+            "data": {
+                "sidebar": "sidebar",
+                "fullwidth": "fullwidth"
+            },
+            "default": "sidebar"
+        }
+        
+    }
+}

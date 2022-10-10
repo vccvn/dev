@@ -1,0 +1,115 @@
+{
+    "label": "Bài viết",
+    "inputs": {
+        "show_breadcrumb": {
+            "type": "switch",
+            "label": "Breadcrumb",
+            "value_type": "boolean",
+            "check_label": "Hiển thị breadcrumb"
+        },
+        "list_style": {
+            "type": "radio",
+            "label": "Style Danh sách",
+            "data": {
+                "style-1": "Style 1",
+                "style-2": "Style 2",
+                "course-one": "Khóa Học - 1",
+                "course-two": "Khóa Học - 2",
+                "course-five": "Khóa Học - 5"
+            },
+            "default": "style-1"
+        },
+        "list_layout": {
+            "type": "radio",
+            "label": "Layout Danh sách",
+            "data": {
+                "sidebar": "sidebar",
+                "fullwidth": "fullwidth"
+            },
+            "default": "sidebar"
+        },
+        "list_type": {
+            "type": "radio",
+            "label": "Kiểu Danh sách",
+            "data": {
+                "standard": "Standard",
+                "list": "Danh sách",
+                "grid": "Lưới (grid)"
+            },
+            "default": "grid"
+        },
+        "detail_style": {
+            "type": "radio",
+            "label": "Style chi tiết",
+            "data": {
+                "1": "Style 1",
+                "2": "Style 2"
+            },
+            "default": "1"
+        },
+        "detail_layout": {
+            "type": "radio",
+            "label": "Layout Chi tiết",
+            "data": {
+                "sidebar": "sidebar",
+                "fullwidth": "fullwidth"
+            },
+            "default": "sidebar"
+        },
+        "detail_footer_area": {
+            "type": "area",
+            "label": "Nội dung mở rộng",
+            "value": "post_detail_footer",
+            "area": "post_detail_footer",
+            "@title-by": "title"
+        },
+        
+        "post_settings": {
+            "type": "area",
+            "label": "Mục được thiết lập",
+            "value": "post_settings",
+            "@area": "post_settings",
+            "@title-by": "title"
+        }
+    },
+    "config": {
+        "name": "Thiết lập mục đăng bài",
+        "layout_type": "single",
+        "form_groups": {
+            "general": {
+                "title": "Thiết lập chung",
+                "inputs": [
+                    "show_breadcrumb"
+                ]
+            },
+            "list": {
+                "title": "Thiết lập danh sách",
+                "inputs": [
+                    "list_style",
+                    "list_layout",
+                    "list_type"
+                ]
+            },
+            "detail": {
+                "title": "Thiết lập Trang chi tiết ",
+                "inputs": [
+                    "detail_style",
+                    "detail_layout",
+                    "detail_footer_area"
+                    
+                ]
+            },
+            "post_settings": {
+                "title": "Thiết lập cho từng mục",
+                "className": "mt-3 pt-2 border-top",
+                "inputs": [
+                    "post_settings"
+                ]
+            }
+        }
+    },
+    "data": {
+        "list_layout": "sidebar",
+        "list_type": "grid"
+    }
+}

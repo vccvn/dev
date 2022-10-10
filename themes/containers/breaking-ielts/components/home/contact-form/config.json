@@ -1,0 +1,30 @@
+{
+    "name": "Home: Form Đăng ký tư vấn",
+    "inputs": {
+        "title": {
+            "type": "text",
+            "label": "Tiêu đề (tùy chọn)",
+            "placeholder": "Viết gì đó..."
+        },
+        "form_title": {
+            "type": "text",
+            "label": "Tiêu đề Form liên hệ",
+            "value": "Đăng ký nhận tư vấn"
+        },
+        "form_description": {
+            "type": "textarea",
+            "label": "Mô rả / Giới thiệu",
+            "placeholder": "Viết gì đó"
+        },
+        "form_subject": {
+            "type": "text",
+            "label": "Subject <br /><small>Tiêu đề gửi form để phân biệt form dùng cho mục dích gì</small>",
+            "value": "Đăng ký nhận tư vấn"
+        },
+        "form_button_text": {
+            "type": "text",
+            "label": "Text hiển thị <br><small>(nút Đăng ký tư vấn)</small>",
+            "placeholder": "Ví dụ: Đăng ký tư vấn"
+        }
+    }
+}

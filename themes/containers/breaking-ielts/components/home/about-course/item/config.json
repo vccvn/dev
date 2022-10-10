@@ -1,0 +1,65 @@
+{
+    "name": "Home: About Course - Item",
+    "inputs": {
+        "title": {
+            "type": "text",
+            "label": "Tên Khóa học",
+            "placeholder": "Viết gì đó..."
+        },
+        "icon": {
+            "type": "iconpicker",
+            "label": "Icon",
+            "default": "icon-45"
+        },
+        "style": {
+            "type": "crazyselect",
+            "label": "Style",
+            "data": {
+                "primary": "Primary",
+                "secondary": "Secondary",
+                "tertiary": "Tertiary",
+                "extra02": "Extra02",
+                "extra03": "Extra03",
+                "extra04": "Extra04",
+                "extra05": "Extra05",
+                "extra08": "Extra08"
+            },
+            "default": "primary"
+        },
+        "syllabus": {
+            "type": "textarea",
+            "label": "Giáo trình ",
+            "placeholder": "Viết gì đó...\nXuống dòng bình thường",
+            "class": "auto-height display-input-text"
+        },
+        "outpoint": {
+            "type": "text",
+            "label": "Đầu ra",
+            "placeholder": "ví dụ 7.0",
+            "default": "7.5"
+        },
+        "duetime": {
+            "type": "number", 
+            "label": "Thời gian khóa học (tháng)"
+        },
+        "url_type": {
+            "type": "radio",
+            "label": "loại liên kết",
+            "data": {
+                "page": "Trang chỉ định",
+                "custom": "Tùy biến",
+                "none": "Không liên kết"
+            }
+        },
+        "page_id": {
+            "type": "crazyselect",
+            "label": "Trang chỉ định",
+            "call": "get_page_options",
+            "@label-type": "value"
+        },
+        "url": {
+            "type": "text",
+            "label": "URL"
+        }
+    }
+}

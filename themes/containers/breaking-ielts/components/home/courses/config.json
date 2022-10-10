@@ -1,0 +1,37 @@
+{
+    "name": "Home: Danh sách Khóa học",
+    "inputs": {
+        "sub_title": {
+            "type": "text",
+            "label": "Tiêu đề nhỏ",
+            "placeholder": ""
+        },
+        "title": {
+            "type": "text",
+            "label": "Tiêu đề (tùy chọn)<br /><small>Dùng Cặp ** để in đậm</small>",
+            "placeholder": "Viết gì đó..."
+        },
+        "description": {
+            "type": "textarea",
+            "label": "Mô tả ngắn (Tùy chọn)",
+            "placeholder": "Viết gì đó..."
+        },
+        "sorttype": {
+            "type": "select",
+            "label": "kiểu sắp xếp",
+            "call": "get_course_sortby_options"
+        },
+        "course_number": {
+            "type": "number",
+            "label": "Số Khóa học",
+            "min": 1,
+            "step": 1,
+            "default": 4
+        },
+        "link": {
+            "type": "text",
+            "label": "Liên kết (tùy chọn)",
+            "placeholder": "Nhập liên kết. (Không bắt buộc)"
+        }
+    }
+}

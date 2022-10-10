@@ -1,0 +1,85 @@
+{
+    "label": "Header",
+    "inputs": {
+        "show_topbar": {
+            "type": "switch",
+            "label": "Hiển thị topbar",
+            "value_type": "boolean",
+            "check_label": "Show",
+            "value": true
+        },
+        "topbar_background_color": {
+            "type": "coloris",
+            "label": "Màu nền",
+            "value": "#1f2432"
+        },
+        "topbar_text_color": {
+            "type": "coloris",
+            "label": "Màu chữ",
+            "value": "#fff"
+        },
+        "topbar_link_color": {
+            "type": "coloris",
+            "label": "Màu Link",
+            "value": "#ee4a62"
+        },
+        
+        "topbar_notify_html": {
+            "type": "ckeditor",
+            "label": "Text thông báo / Chào mừng",
+            "class": "text-editor"
+        },
+        "topbar_right_menu_id": {
+            "type": "crazyselect",
+            "label": "Top Right Menu",
+            "call": "get_menu_options"
+        },
+        "logo": {
+            "type": "media",
+            "label": "Logo (Tùy chọn)",
+            "@filetype": "png,jpg,jpeg,gif,bmp"
+        },
+        "category_menu_text": {
+            "type": "text",
+            "label": "Menu Text",
+            "placeholder": "Ví dụ: Danh mục"
+        },
+        
+        "category_menu_id": {
+            "type": "crazyselect",
+            "label": "Menu Danh mục",
+            "call": "get_menu_options"
+        },
+        "show_search_form": {
+            "type": "switch",
+            "label": "Hiển thị Form Tìm kiếm",
+            "value_type": "boolean",
+            "check_label": "Show",
+            "value": true
+        },
+        "show_extra_button": {
+            "type": "switch",
+            "label": "Hiển thị nút mở rộng",
+            "value_type": "boolean",
+            "check_label": "Show"
+        },
+        "extra_button_url": {
+            "type": "text",
+            "label": "Url <br> <small>(liên kết cho nút mở rộng)</small>",
+            "placeholder": "http://"
+        },
+        "extra_button_text": {
+            "type": "text",
+            "label": "Text <br> <small>(liên kết cho nút mở rộng)</small>",
+            "placeholder": "Ví dụ đăng ký"
+        },
+        "extra_button_icon": {
+            "type": "iconpicker",
+            "label": "Icon <br> <small>(icon cho nút mở rộng)</small>",
+            "placeholder": "Ví dụ icon-4"
+        }
+        
+        
+        
+    }
+}

@@ -1,0 +1,41 @@
+{
+    "name": "Home: Thông tin giảng viên",
+    "inputs": {
+        "title": {
+            "type": "text",
+            "label": "Họ và tên",
+            "placeholder": "Ví dụ Nguyễn Văn A"
+        },
+        
+        "avatar": {
+            "type": "media",
+            "label": "Hình Đại diện",
+            "placeholder": ""
+        },
+        "job": {
+            "type": "text",
+            "label": "Công việc",
+            "placeholder": "Ví dụ Giảng viên"
+        },
+        "link": {
+            "type": "text",
+            "label": "Liên kết (tùy chọn)",
+            "placeholder": "Nhập liên kết. (Không bắt buộc)"
+        },
+        "facebook": {
+            "type": "text",
+            "label": "Liên kết facebook",
+            "placeholder": "https://www.facebook.com/UserName"
+        },
+        "twitter": {
+            "type": "text",
+            "label": "Liên kết twitter",
+            "placeholder": "https://twitter.com/UserName"
+        },
+        "linkedin": {
+            "type": "text",
+            "label": "Liên kết linkedin",
+            "placeholder": "https://linkedin.com/"
+        }
+    }
+}

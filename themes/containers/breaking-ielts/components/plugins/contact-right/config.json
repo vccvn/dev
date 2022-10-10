@@ -1,0 +1,31 @@
+{
+    "name": "Plugins: Mục liên hệ bên phải",
+    "inputs": {
+        "title": {
+            "type": "text",
+            "label": "Tiêu đề (Tùy chọn)"
+        },
+        
+        "email": {
+            "type": "text",
+            "label": "Email",
+            "placeholder": "Mặc dịnh sẽ lấy từ thiết lập thông tin wwbsite"
+        },
+        "phone_number": {
+            "type": "text",
+            "label": "Số điện thoại",
+            "placeholder": "Mặc dịnh sẽ lấy từ thiết lập thông tin wwbsite"
+        },
+        "messeng_url": {
+            "type": "text",
+            "label": "Messenger",
+            "placeholder": "https://m.me/t"
+        },
+        "custom_link": {
+            "type": "text",
+            "label": "Đường dẫn tùy chọn",
+            "placeholder": "Mặc dịnh sẽ lấy từ thiết lập thông tin wwbsite"
+        }
+        
+    }
+}

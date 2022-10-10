@@ -1,0 +1,19 @@
+{
+    "name": "Home: Đối tác & Khách hàng - Item",
+    "inputs": {
+        "title": {
+            "type": "text",
+            "label": "Tên Khóa học",
+            "placeholder": "Viết gì đó..."
+        },
+        "logo": {
+            "type": "media",
+            "label": "Logo"
+        },
+        "link": {
+            "type": "text",
+            "label": "Link",
+            "placeholder": "http://"
+        }
+    }
+}

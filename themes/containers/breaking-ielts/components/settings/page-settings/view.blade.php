@@ -1,0 +1,3 @@
+{!!
+    isset($children)?$children:''
+!!}

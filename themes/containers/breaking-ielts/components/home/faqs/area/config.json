@@ -1,0 +1,36 @@
+{
+    "name": "Home: FAQ's Area",
+    "inputs": {
+        "sub_title": {
+            "type": "text",
+            "label": "Tiêu đề nhỏ",
+            "placeholder": ""
+        },
+        "title": {
+            "type": "text",
+            "label": "Tiêu đề (tùy chọn)<br /><small>Dùng Cặp ** để in đậm</small>",
+            "placeholder": "Viết gì đó..."
+        },
+        
+        "image_1": {
+            "type": "media",
+            "label": "Hình 1 (220x280)",
+            "placeholder": ""
+        },
+        "image_2": {
+            "type": "media",
+            "label": "Hình 2 (200x240)",
+            "placeholder": ""
+        },
+        "image_3": {
+            "type": "media",
+            "label": "Hình 3 (180x270)",
+            "placeholder": ""
+        },
+        "image_4": {
+            "type": "media",
+            "label": "Hình 4 (240x290)",
+            "placeholder": ""
+        }
+    }
+}

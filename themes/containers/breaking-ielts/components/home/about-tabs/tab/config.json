@@ -1,0 +1,22 @@
+{
+    "name": "Home: About Tabs : Tab Item",
+    "inputs": {
+        "title": {
+            "type": "text",
+            "label": "Tiêu đề",
+            "placeholder": "Viết gì đó..."
+        },
+        "description": {
+            "type": "textarea",
+            "label": "Mô tả <br><small>Dùng Cặp ** để in đậm</small>",
+            "placeholder": "Viết gì đó...\nXuống dòng bình thường",
+            "class": "auto-height display-input-text"
+        },
+        "features": {
+            "type": "textarea",
+            "label": "Danh sách Features",
+            "placeholder": "Viết gì đó...\nMỗi dòng một câu",
+            "class": "auto-height display-input-text"
+        }
+    }
+}

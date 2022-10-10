@@ -1,0 +1,51 @@
+{
+    "name": "Home: Banner Style 1: Area",
+    "inputs": {
+        "title": {
+            "type": "textarea",
+            "label": "Tiêu đề (tùy chọn)<br><small>Dùng Cặp ** để in đậm</small>",
+            "placeholder": "Viết gì đó...\nXuống dòng bình thường",
+            "class": "auto-height display-input-text"
+        },
+        "description": {
+            "type": "textarea",
+            "label": "Mô tả ",
+            "placeholder": "Viết gì đó..."
+        },
+        "url": {
+            "type":"text",
+            "label":"Đường dẫn",
+            "placeholder": "ví dụ: https://google.com.vn"
+        },
+        "button_text": {
+            "type": "text",
+            "label": "Nút bấn",
+            "value": "Xem Chi tiết"
+        },
+
+        "instrunctor_image": {
+            "type": "media",
+            "label": "Ảnh học viên hoặc giảng viên"
+        },
+
+        "instrunctor_title": {
+            "type": "text",
+            "label": "Tiêu đề mục giời thiệu giảng viên",
+            "placeholder": "Ví dụ: Giảng viên",
+            "value": "Giảng viên"
+        },
+        "instrunctor_list_image": {
+            "type": "media",
+            "label": "Ảnh DS giảng viên"
+        },
+
+        "instrunctor_number": {
+            "type": "number",
+            "label": "Số giảng viên",
+            "placeholder": "Ví dụ 250",
+            "min": 0,
+            "step": 1
+        }
+        
+    }
+}

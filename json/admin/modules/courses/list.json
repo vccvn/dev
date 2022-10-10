@@ -1,0 +1,84 @@
+{
+    "name": "Khóa học",
+    "package": "courses",
+    "use_trash": false,
+    "titles": {
+        "default": "Danh sách Khóa học",
+        "trash": "Danh sách Khóa học đã xóa"
+    },
+    "data": [],
+    "filter": {
+        "search_columns": [],
+        "sort_columns": []
+    },
+    "table": {
+        "class": "",
+        "columns": [
+            {
+                "type": "order",
+                "title": "STT",
+                "class": "id-col",
+                "order": 1
+            },
+            {
+                "title": "Ảnh",
+                "class": "text-center thumbnail-col",
+                "template": "<a href=\"{@route}\"><img src=\"{@getThumbnail}\" class=\"image-thumbnail\" alt=\"{name}\"></a>",
+                "data": {
+                    "@route": [
+                        ".update",
+                        {
+                            "id": ":id"
+                        }
+                    ],
+                    "@getThumbnail": []
+                }
+            },
+            {
+                "title": "Tên khóa học",
+                "class": "",
+                "template": "<a href=\"{@route}\">{name}</a>",
+                "data": {
+                    "@route": [
+                        ".course-detail",
+                        {
+                            "course": ":slug"
+                        }
+                    ]
+                }
+            },
+            {
+                "type": "data",
+                "title": "Hình thức",
+                "class": "",
+                "template": "{@getTypeText}",
+                "data": {
+                    "@getTypeText": []
+                }
+            },
+            {
+                "title": "Mô tả",
+                "class": "desc-wrapper max-200",
+                "template": "<span class=\"full\">{@htmlentities}</span><span class=\"short\">{@getShortDesc}</span><a href=\"javascript:void(0);\" class=\"btn-toggle-desc\">Xem thêm</a>",
+                "data":{
+                    "@htmlentities": [":description"],
+                    "@getShortDesc":[120]
+                }
+            },
+            
+            {
+                "title": "Giá bán",
+                "class": "",
+                "template": "{@priceFormat}",
+                "data":{
+                    "@priceFormat": []
+                }
+            }
+        ]
+    },
+    "resources": {
+        "js_data": [],
+        "js": [],
+        "css": []
+    }
+}

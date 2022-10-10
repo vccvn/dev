@@ -1,0 +1,64 @@
+{
+    "name": "Settings: Page: Thiết lập trang ",
+    "inputs": {
+        "title": {
+            "type": "text",
+            "label": "Tiêu đề Thiết lập "
+        },
+        "page_id": {
+            "type": "crazyselect",
+            "label": "Trang",
+            "call": "get_page_options",
+            "@label-type": "value"
+        },
+        "show_breadcrumb": {
+            "type": "switch",
+            "label": "Breadcrumb",
+            "value_type": "boolean",
+            "check_label": "Hiển thị breadcrumb"
+        },
+        "list_style": {
+            "type": "radio",
+            "label": "Style Danh sách",
+            "data": {
+                "style-1": "Style 1",
+                "style-2": "Style 2"
+            },
+            "default": "style-1"
+        },
+        "list_layout": {
+            "type": "radio",
+            "label": "Layout Danh sách",
+            "data": {
+                "sidebar": "sidebar",
+                "fullwidth": "fullwidth"
+            },
+            "default": "sidebar"
+        },
+        "list_type": {
+            "type": "radio",
+            "label": "Kiểu Danh sách",
+            "data": {
+                "standard": "Standard",
+                "list": "Danh sách",
+                "grid": "Lưới (grid)"
+            },
+            "default": "grid"
+        },
+        "detail_style": {
+            "type": "radio",
+            "label": "Style chi tiết",
+            "data": {
+                "1": "Style 1",
+                "2": "Style 2"
+            },
+            "default": "1"
+        }
+        
+    },
+    "data": {
+        "show_breadcrumb": true,
+        "list_style": "1",
+        "list_type": "grid"
+    }
+}

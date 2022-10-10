@@ -1,0 +1,26 @@
+{
+    "label": "Sidebar",
+    "inputs": {
+        "sidebar_posts": {
+            "type": "area",
+            "label": "Post sidebar",
+            "value": "sidebar_posts",
+            "area": "sidebar_posts",
+            "@title-by": "title"
+        },
+        "sidebar_pages": {
+            "type": "area",
+            "label": "Page sidebar",
+            "value": "sidebar_pages",
+            "area": "sidebar_pages",
+            "@title-by": "title"
+        },
+        "sidebar_courses": {
+            "type": "area",
+            "label": "Course sidebar",
+            "value": "sidebar_courses",
+            "area": "sidebar_courses",
+            "@title-by": "title"
+        }
+    }
+}

@@ -1,0 +1,71 @@
+{
+    "name": "Bài giảng",
+    "package": "courses.lessons",
+    "use_trash": false,
+    "titles": {
+        "default": "Danh sách Bài giảng",
+        "trash": "Danh sách Bài giảng đã xóa"
+    },
+    "data": [],
+    "filter": {
+        "search_columns": [],
+        "sort_columns": []
+    },
+    "table": {
+        "class": "",
+        "columns": [
+            {
+                "type": "order",
+                "title": "STT",
+                "class": "id-col",
+                "order": 1
+            },
+            {
+                "title": "Ảnh",
+                "class": "text-center thumbnail-col",
+                "template": "<a href=\"{@route}\"><img src=\"{@getThumbnail}\" class=\"image-thumbnail\" alt=\"{name}\"></a>",
+                "data": {
+                    "@route": [
+                        ".update",
+                        {
+                            "id": ":id"
+                        }
+                    ],
+                    "@getThumbnail": []
+                }
+            },
+            {
+                "title": "Bài giảng / Tiết học",
+                "class": "",
+                "text": ":name"
+            },
+            {
+                "title": "Khóa học",
+                "class": "",
+                "template": "{@getCourseName}",
+                "data": {
+                    "@getCourseName": []
+                }
+            },
+            {
+                "type": "data",
+                "title": "Hình thức",
+                "class": "",
+                "template": "{@getTypeText}",
+                "data": {
+                    "@getTypeText": []
+                }
+            },
+            {
+                "title": "Mô tả",
+                "class": "",
+                "text": ":description"
+            }
+        ]
+    },
+    "resources": {
+        "js_data": [],
+        "js": [],
+        "css": []
+    }
+}

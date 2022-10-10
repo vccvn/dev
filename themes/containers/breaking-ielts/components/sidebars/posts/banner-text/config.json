@@ -1,0 +1,23 @@
+{
+    "name": "Sidebar: Posts: Banner Text",
+    "inputs": {
+        "title": {
+            "type": "text",
+            "label": "Tiêu đề (Tùy chọn)<br><small>(Dùng cặp dấu ** để in đậm</small>)"
+        },
+        "description": {
+            "type": "textarea",
+            "label": "Mô tả"
+        },
+        "url": {
+            "type": "text",
+            "label": "Dường dẫn",
+            "placeholder": "https://"
+        },
+        "button_text": {
+            "type": "text",
+            "label": "Text nút bấm",
+            "placeholder": "Ví dụ: Bắt đầu"
+        }
+    }
+}

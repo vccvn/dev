@@ -1,0 +1,24 @@
+{
+    "name": "Home: About Tabs",
+    "inputs": {
+        "sub_title": {
+            "type": "text",
+            "label": "Tiêu đề nhỏ (tùy chọn)",
+            "placeholder": "Viết gì đó..."
+        },
+        "title": {
+            "type": "text",
+            "label": "Tiêu đề (tùy chọn)<br /><small>Dùng Cặp ** để in đậm</small>",
+            "placeholder": "Viết gì đó..."
+        },
+        "image_large": {
+            "type":"media",
+            "label": "Ảnh bên trái<br><small>Kích thước 390 x 390</small>"
+        },
+        "image_small": {
+            "type":"media",
+            "label": "Ảnh bên trái<br><small>Kích thước 230 x 230</small>"
+        }
+        
+    }
+}

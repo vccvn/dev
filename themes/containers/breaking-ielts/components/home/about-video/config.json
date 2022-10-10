@@ -1,0 +1,58 @@
+{
+    "name": "Home: About & Video",
+    "inputs": {
+        "sub_title": {
+            "type": "text",
+            "label": "Tiêu đề nhỏ (tùy chọn)",
+            "placeholder": "Viết gì đó..."
+        },
+        "title": {
+            "type": "text",
+            "label": "Tiêu đề (tùy chọn)<br /><small>Dùng Cặp ** để in đậm</small>",
+            "placeholder": "Viết gì đó..."
+        },
+        "description": {
+            "type": "textarea",
+            "label": "Mô tả <br><small>Dùng Cặp ** để in đậm</small>",
+            "placeholder": "Viết gì đó...\nXuống dòng bình thường",
+            "class": "auto-height display-input-text"
+        },
+        "features": {
+            "type": "textarea",
+            "label": "Danh sách Features<br><small>()</small>",
+            "placeholder": "Viết gì đó...\nMỗi dòng một câu",
+            "class": "auto-height display-input-text"
+        },
+        "image": {
+            "type":"media",
+            "label": "Ảnh bên trái<br><small>Kích thước 370 x 420</small>"
+        },
+        "video_url": {
+            "type": "text",
+            "label": "Đường dẫn video<br>(Youtube, Vimeo)",
+            "placeholder": "https://www.youtube.com/watch?v=Gds4_76H"
+        },
+        "video_thumbnail": {
+            "type":"media",
+            "label": "Ảnh bên trái<br><small>Kích thước 370 x 420</small>"
+        },
+        "award_icon": {
+            "type": "iconpicker",
+            "label": "Icon mục Award",
+            "default": "icon-21"
+        },
+        "award_number": {
+            "type": "number",
+            "label": "Số award<br><small>(Số giảng viên , Số khóa học, Số học viên, hoặc con số nào đó)</small>",
+            "min": 0,
+            "step": 1,
+            "default": 10,
+            "placeholder":"Con số thú vị"
+        },
+        "award_label": {
+            "type": "text",
+            "label": "Nhãn cho mục award",
+            "placeholder": "ví dụ: Khóa học"
+        }
+    }
+}

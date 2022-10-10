@@ -1,0 +1,41 @@
+{
+    "name": "[ĐÃ Xóa] Home: Các con số thống kê (Item)",
+    "inputs": {
+        
+        "number": {
+            "type": "number",
+            "label": "Số",
+            "placeholder": "Viết gì đó...",
+            "min": 0,
+            "step": 0.1
+        },
+        "unit": {
+            "type": "text",
+            "label": "Đơn vị tính",
+            "placeholder": "Viết gì đó..."
+        },
+        "title": {
+            "type": "text",
+            "label": "Nhãn",
+            "placeholder": "Viết gì đó..."
+        },
+        "style": {
+            "type": "crazyselect",
+            "label": "Style",
+            "data": {
+                "primary": "Primary",
+                "secondary": "Secondary",
+                "tertiary": "Tertiary",
+                "extra01": "Extra01",
+                "extra02": "Extra02",
+                "extra03": "Extra03",
+                "extra04": "Extra04",
+                "extra05": "Extra05",
+                "extra06": "Extra06",
+                "extra07": "Extra07",
+                "extra08": "Extra08"
+            },
+            "default": "primary"
+        }
+    }
+}

@@ -1,0 +1,95 @@
+{
+    "label": "Trang",
+    "inputs": {
+        "show_breadcrumb": {
+            "type": "switch",
+            "label": "Breadcrumb",
+            "value_type": "boolean",
+            "check_label": "Hiển thị breadcrumb"
+        },
+        "list_style": {
+            "type": "radio",
+            "label": "Style Danh sách",
+            "data": {
+                "style-1": "Style 1",
+                "style-2": "Style 2"
+            },
+            "default": "1"
+        },
+        "list_layout": {
+            "type": "radio",
+            "label": "Layout Danh sách",
+            "data": {
+                "sidebar": "sidebar",
+                "fullwidth": "fullwidth"
+            },
+            "default": "sidebar"
+        },
+        "list_type": {
+            "type": "radio",
+            "label": "Kiểu Danh sách",
+            "data": {
+                "standard": "Standard",
+                "list": "Danh sách",
+                "grid": "Lưới (grid)"
+            },
+            "default": "grid"
+        },
+        "detail_style": {
+            "type": "radio",
+            "label": "Style chi tiết",
+            "data": {
+                "1": "Style 1",
+                "2": "Style 2"
+            },
+            "default": "1"
+        },
+        "page_settings": {
+            "type": "area",
+            "label": "Mục được thiết lập",
+            "value": "page_settings",
+            "@area": "page_settings",
+            "@title-by": "title"
+        }
+    },
+    "config": {
+        "name": "Thiết lập mục đăng bài",
+        "layout_type": "single",
+        "form_groups": {
+            "general": {
+                "title": "Thiết lập chung",
+                "inputs": [
+                    "show_breadcrumb"
+                ]
+            },
+            "list": {
+                "title": "Thiết lập danh sách",
+                "inputs": [
+                    "list_style",
+                    "list_layout",
+                    "list_type"
+                ]
+            },
+            "detail": {
+                "title": "Thiết lập Trang chi tiết ",
+                "inputs": [
+                    "detail_style",
+                    "detail_use_feature_image"
+                   
+                ]
+            },
+            "page": {
+                "title": "Thiết lập Trang cụ thể ",
+                "inputs": [
+                    "page_settings"
+                   
+                ]
+            }
+        }
+    },
+    "data": {
+        "show_breadcrumb": true,
+        "list_layout": "sidebar",
+        "list_type": "grid"
+    }
+}

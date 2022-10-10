@@ -1,0 +1,37 @@
+{
+    "data": {
+        "courses": {
+            "text": "Khóa học",
+            "title": "Quản lý khóa học",
+            "permiss": "admin.courses",
+            "route": "admin.courses.list",
+            "icon": "user-graduate",
+            "submenu":{
+                "type": "list",
+                "data": {
+                    "list": {
+                        "text": "Danh sách khóa học",
+                        "title": "Quản lý khách hàng",
+                        "route": "admin.courses.list",
+                        "icon": "list"
+                    },
+                    "add": {
+                        "text": "Thêm Khóa học",
+                        "title": "Thêm Khóa học",
+                        "active_key": "courses",
+                        "route": "admin.courses.create",
+                        "icon": "plus-circle"
+                    },
+                    "lessons": {
+                        "text": "Bài giảng",
+                        "title": "Danh sách bài giảng",
+                        "active_key": "courses.lessons",
+                        "route": "admin.courses.lessons.list",
+                        "icon": "plus-circle"
+                    }
+                }
+                
+            }
+        }
+    }
+}

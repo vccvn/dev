@@ -1,0 +1,41 @@
+{
+    "name": "Home: CTA - Banner",
+    "inputs": {
+        "title": {
+            "type": "text",
+            "label": "Tiêu đề (tùy chọn)<br /><small>Dùng Cặp ** để in đậm</small>",
+            "placeholder": "Viết gì đó..."
+        },
+        "description": {
+            "type": "textarea",
+            "label": "Mô tả <br><small>Dùng Cặp ** để in đậm</small>",
+            "placeholder": "Viết gì đó...\nXuống dòng bình thường",
+            "class": "auto-height display-input-text"
+        },
+        "url_type": {
+            "type": "radio",
+            "label": "loại liên kết",
+            "data": {
+                "page": "Trang chỉ định",
+                "custom": "Tùy biến",
+                "none": "Không liên kết"
+            }
+        },
+        "page_id": {
+            "type": "crazyselect",
+            "label": "Trang chỉ định",
+            "call": "get_page_options",
+            "@label-type": "value"
+        },
+        "url": {
+            "type": "text",
+            "label": "URL"
+        },
+        "button_text": {
+            "type": "text",
+            "label": "Text hiển thị <br><small>(nút Đăng ký tư vấn)</small>",
+            "placeholder": "Ví dụ: Đăng ký tư vấn",
+            "value": "Xem thêm"
+        }
+    }
+}

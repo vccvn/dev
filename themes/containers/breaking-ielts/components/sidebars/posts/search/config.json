@@ -1,0 +1,13 @@
+{
+    "name": "Sidebar: Posts: Box Tìm kiếm",
+    "inputs": {
+        "title": {
+            "type": "text",
+            "label": "Tiêu đề (Tùy chọn)"
+        },
+        "placeholder": {
+            "type": "text",
+            "label": "Placeholder"
+        }
+    }
+}

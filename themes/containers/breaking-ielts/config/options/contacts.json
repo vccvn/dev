@@ -1,0 +1,59 @@
+{
+    "label": "Liên hệ",
+    "inputs": {
+        "page_title": {
+            "type": "text",
+            "label": "Tiêu đề Trang liên hệ",
+            "value": "Liên hệ"
+        },
+        
+        "page_description": {
+            "type": "textarea",
+            "label": "Mô rả trang liên hệ",
+            "placeholder": "Viết gì đó"
+        },
+        "info_title": {
+            "type": "text",
+            "label": "Tiêu đề thông tin",
+            "value": "Liên hệ với chúng tôi qua"
+        },
+        
+        "address": {
+            "type": "text",
+            "label": "Địa chỉ",
+            "placeholder": "Mặc dịnh sẽ lấy từ thiết lập thông tin wwbsite"
+        },
+        
+        "email": {
+            "type": "text",
+            "label": "Email",
+            "placeholder": "Mặc dịnh sẽ lấy từ thiết lập thông tin wwbsite"
+        },
+        "phone_number": {
+            "type": "text",
+            "label": "Số điện thoại",
+            "placeholder": "Mặc dịnh sẽ lấy từ thiết lập thông tin wwbsite"
+        },
+        
+        "form_title": {
+            "type": "text",
+            "label": "Tiêu đề Form liên hệ",
+            "value": "Hãy nói về những ý tưởng của bạn"
+        },
+        "form_description": {
+            "type": "textarea",
+            "label": "Mô rả / Giới thiệu",
+            "placeholder": "Viết gì đó"
+        },
+        "button_text": {
+            "type": "text",
+            "label": "Nút gửi",
+            "value": "Gửi liên hệ"
+        },
+        "map_code": {
+            "type": "textarea",
+            "label": "Mã nhúng bản đồ",
+            "placeholder": "Nhập mã Mã nhúng"
+        }
+    }
+}

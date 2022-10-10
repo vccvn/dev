@@ -1,0 +1,16 @@
+{
+    "name": "Home: About Course - Area",
+    "inputs": {
+        "title": {
+            "type": "text",
+            "label": "Tiêu đề (tùy chọn)<br /><small>Dùng Cặp ** để in đậm</small>",
+            "placeholder": "Viết gì đó..."
+        },
+        "description": {
+            "type": "textarea",
+            "label": "Mô tả <br><small>Dùng Cặp ** để in đậm</small>",
+            "placeholder": "Viết gì đó...\nXuống dòng bình thường",
+            "class": "auto-height display-input-text"
+        }
+    }
+}

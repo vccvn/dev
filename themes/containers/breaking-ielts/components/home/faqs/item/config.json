@@ -1,0 +1,16 @@
+{
+    "name": "Home: FAQ's Item",
+    "inputs": {
+        "title": {
+            "type": "text",
+            "label": "Tiêu đề ",
+            "placeholder": "Viết gì đó..."
+        },
+        "content": {
+            "type": "textarea",
+            "label": "Mô tả <br><small>Dùng Cặp ** để in đậm</small>",
+            "placeholder": "Viết gì đó...\nXuống dòng bình thường",
+            "class": "auto-height display-input-text"
+        }
+    }
+}

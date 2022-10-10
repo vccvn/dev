@@ -1,0 +1,27 @@
+{
+    "name": "Home: A&S: Slogan",
+    "inputs": {
+        "title": {
+            "type": "text",
+            "label": "Tiêu đề (tùy chọn)",
+            "placeholder": "Viết gì đó..."
+        },
+        "icon":{
+            "type": "media",
+            "label": "icon",
+            "placeholder": "Chọn ảnh"
+        },
+        "description": {
+            "type": "textarea",
+            "label": "Mô tả",
+            "placeholder": "Viết gì đó...\nXuống dòng bình thường",
+            "class": "auto-height display-input-text"
+        },
+        "link": {
+            "type": "text",
+            "label": "Liên kết (tùy chọn)",
+            "placeholder": "Nhập liên kết. (Không bắt buộc)"
+        }
+        
+    }
+}

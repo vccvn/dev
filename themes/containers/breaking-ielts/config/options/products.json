@@ -1,0 +1,74 @@
+{
+    "label": "Sản Phẩm",
+    "inputs": {
+        "detail_extra": {
+            "type": "area",
+            "label": "Thông tin thêm",
+            "value": "product_detail_extra",
+            "area": "product_detail_extra",
+            "@title-by": "title"
+        },
+        "product_detail_append": {
+            "type": "area",
+            "label": "Thông tin thêm vào cuối trang",
+            "value": "product_detail_append",
+            "area": "product_detail_append",
+            "@title-by": "title"
+        },
+        "product_detail_sidebar": {
+            "type": "area",
+            "label": "Sidebar Chi tiết",
+            "value": "sidebar_product",
+            "area": "sidebar_product",
+            "@title-by": "title"
+        },
+        "suggest_page_id": {
+            "type": "crazyselect",
+            "label": "Trang khám phá",
+            "call": "get_page_options"
+        },
+        "suggest_title": {
+            "type": "text",
+            "label": "Tiêu đề (tùy chọn)"
+        },
+        "suggest_description": {
+            "type": "textarea",
+            "label": "Mô rả ",
+            "placeholder": "Viết gì đó..."
+        },
+        "suggest_list_type": {
+            "type": "radio",
+            "label": "Kiểu danh sách",
+            "data": {
+                "user": "Lấy trong danh sách của user đăng nhập",
+                "custom": "Tùy biến"
+            },
+            "default": "custom"
+        }
+    },
+    "config": {
+        "name": "Thiết lập trang sản phẩm",
+        "layout_type": "single",
+        "form_groups": {
+            "detail": {
+                "title": "Thiết lập trang chi tiết",
+                "inputs": [
+                    "detail_extra",
+                    "product_detail_append",
+                    "product_detail_sidebar"
+                    
+                ]
+            },
+            "suggest": {
+                "title": "Thiết lập trang chi tiết",
+                "inputs": [
+                    "suggest_page_id",
+                    "suggest_title",
+                    "suggest_description",
+                    "suggest_list_type"
+                    
+                ]
+            }
+        }
+    }
+}

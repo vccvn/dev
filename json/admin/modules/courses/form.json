@@ -1,0 +1,216 @@
+{
+    "inputs": {
+        "name": {
+            "type": "text",
+            "label": "Tên Khóa học",
+            "placeholder": "Nhập tên khóa học",
+            "required": "true"
+        },
+        "slug": {
+            "type": "text",
+            "label": "Đường dẫn (slug)",
+            "placeholder": "Nhập đường dẫn",
+            "template": "crazyslug",
+            "@check-field": "custom_slug",
+            "@extension": ".html",
+            "@check-slug-route": "admin.courses.check-slug",
+            "@get-slug-route": "admin.courses.get-slug",
+            "@source-id": "name",
+            "@ajax-param-selectors": "#input-hidden-id",
+            "@ajax-check-name": "slug",
+            "@ajax-get-name": "slug"
+        },
+        "custom_slug": {
+            "type": "checkbox",
+            "label": "Tùy chọn slug",
+            "check_label": "Tùy chỉnh"
+        },
+        "description": {
+            "type": "textarea",
+            "label": "Mô tả ngắn",
+            "placeholder": "Nhập mô tả",
+            "style": {
+                "min-height": "100px"
+            }
+        },
+        "content": {
+            "type": "textarea",
+            "label": "Nội dung",
+            "placeholder": "Nhập Nội dung",
+            "className": "tiny-mce",
+            "template": "tinymce",
+            "height": 375
+        },
+        "thumbnail_id": {
+            "type": "media",
+            "label": "Ảnh Thumbnail"
+        },
+        "video_url": {
+            "type": "text",
+            "label": "Đường dẫn video giới thiệu"
+        },
+        "course_level": {
+            "type": "text",
+            "label": "Level",
+            "placeholder": "Level khóa học"
+        },
+        "user_level": {
+            "type": "text",
+            "label": "Đối tượng hướng đến",
+            "placeholder": "Ví dụ: học sinh / sinh viên, nhân viên văn phòng..."
+        },
+        "outpoint": {
+            "type": "number",
+            "label": "Đầu ra",
+            "placeholder": "Nhập Đầu ra",
+            "default": 7.5,
+            "min": 0,
+            "step": 0.1
+        },
+        "start_date": {
+            "type": "date",
+            "label": "Thời gian bắt đầu khóa học",
+            "data-format": "yyyy-mm-dd"
+        },
+        "duetime": {
+            "type": "number",
+            "label": "Thời gian học",
+            "placeholder": "Nhập Thời gian khóa học",
+            "default": 0,
+            "min": 0,
+            "step": 1,
+            "append_group": [
+                "duetime_unit"
+            ]
+        },
+        "duetime_unit": {
+            "type": "crazyselect",
+            "label": "Đơn vị thời gian",
+            "data": {
+                "day": "ngày",
+                "week": "tuần",
+                "month": "tháng"
+            }
+        },
+        "type": {
+            "type": "radio",
+            "label": "Loại khóa học",
+            "call": "get_privacy_course_type_labels",
+            "default": "protected"
+        },
+        "price": {
+            "type": "number",
+            "label": "Giá",
+            "placeholder": "Nhập giá khóa học",
+            "default": 0
+        },
+        "tags": {
+            "type": "crazytag",
+            "label": "Thẻ",
+            "placeholder": "Nhập thẻ...",
+            "template": "crazytag",
+            "@type": "dynamic",
+            "@search-route": "admin.tags.data",
+            "@create-route": "admin.tags.create",
+            "@create-field": "tags",
+            "call": "get_input_tag_data",
+            "params": [
+                "course",
+                "#hidden_id",
+                {
+                    "id": ":defval"
+                }
+            ]
+        },
+        "rating_avg": {
+            "type": "number",
+            "label": "Số sao",
+            "placeholder": "Nhập số sao đánh giá",
+            "default": 4.5,
+            "min": 0,
+            "step": 0.1,
+            "max": 5
+        },
+        "rating_count": {
+            "type": "number",
+            "label": "Tổng số đánh giá",
+            "placeholder": "Nhập số đánh giá",
+            "default": 100,
+            "min": 0,
+            "step": 1
+        },
+        "lesson_count": {
+            "type": "number",
+            "label": "Số buổi",
+            "placeholder": "Nhập Số buổi",
+            "default": 10,
+            "min": 0,
+            "step": 1
+        },
+        "student_count": {
+            "type": "number",
+            "label": "Số học viên",
+            "placeholder": "Số học viên",
+            "default": 100,
+            "min": 0,
+            "step": 1
+        }
+        
+    },
+    "config": {
+        "name": "Thông tin Khóa học",
+        "layout_type": "column",
+        "form_groups": [
+            {
+                "title": "Thông tin cơ bản",
+                "class": "col-md-7",
+                "inputs": [
+                    "name",
+                    "slug",
+                    "description",
+                    "course_level",
+                    "user_level",
+                    "outpoint",
+                    "lesson_count",
+                    "student_count"
+                ]
+            },
+            {
+                "title": "Ảnh và thuộc tính",
+                "class": "col-md-5",
+                "inputs": [
+                    "thumbnail_id",
+                    "video_url",
+                    "type",
+                    "price",
+                    "duetime",
+                    "duetime_unit",
+                    "start_date"
+                ]
+            },
+            {
+                "title": "Mở rộng",
+                "class": "col-md-12",
+                "inputs": [
+                    "content"
+                ]
+            },
+            {
+                "title": "",
+                "class": "col-md-7",
+                "inputs": [
+                    "rating_avg",
+                    "rating_count"
+                    
+                ]
+            },
+            {
+                "title": "",
+                "class": "col-md-5",
+                "inputs": [
+                    "tags"
+                ]
+            }
+        ]
+    }
+}

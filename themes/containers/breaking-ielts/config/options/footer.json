@@ -1,0 +1,34 @@
+{
+    "label": "Footer",
+    "inputs": {
+        "background_color": {
+            "type": "coloris",
+            "label": "Màu nền",
+            "value": "#111212"
+        },
+        "title_color": {
+            "type": "coloris",
+            "label": "Màu Tiêu đề",
+            "value": "#fff"
+        },
+        "text_color": {
+            "type": "coloris",
+            "label": "Màu chữ",
+            "value": "#bababa"
+        },
+        "widgets": {
+            "type": "area",
+            "label": "Nội dung footer",
+            "value": "footer_slogans",
+            "area": "footer_widgets",
+            "@title-by": "title"
+        },
+        
+        "copyright": {
+            "type": "textarea",
+            "label": "Nôi dung mục copyright",
+            "className": "auto-height",
+            "placeholder": "Viết gì đó" 
+        }
+    }
+}

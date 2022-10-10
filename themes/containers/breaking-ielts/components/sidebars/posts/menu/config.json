@@ -1,0 +1,25 @@
+{
+    "name": "Sidebar: Posts: Menu",
+    "inputs": {
+        "title": {
+            "type": "text",
+            "label": "Tiêu đề (Tùy chọn)"
+        },
+        "menu_id": {
+            "type": "crazyselect",
+            "label": "Menu",
+            "call": "get_menu_options"
+        },
+        "level": {
+            "type":"radio",
+            "label": "Số cấp",
+            "data": {
+                "1": "1",
+                "2": "2",
+                "3": "3",
+                "4": "4"
+            },
+            "default": 1
+        }
+    }
+}
